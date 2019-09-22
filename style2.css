@@ -1,0 +1,24 @@
+table, th, td {
+  border: 1px solid black;
+  border-color: #800000;
+  border-collapse: collapse;
+
+}
+th,td{
+  background-color: #E30B5C;
+  padding: 20px;
+}
+th{
+  background-color:#003153;
+  text-align: left;
+}
+td{
+  background-color:#000784
+}
+table{
+  border-spacing: 5px;
+}
+table#t01{
+  width: 65%;
+  background-color:#f1f1c1
+}

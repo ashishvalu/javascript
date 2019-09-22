@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1>javascript arrays </h1>
+
+<p id="main"></p>
+<p id="mi"></p>
+<p id="ram"></p>
+<p id="ww"></p>
+<p id="pp"></p>
+<script>
+var bicks = ["ktm","fz5","hornet","livo"];
+document.getElementById("main").innerHTML = bicks[2];
+var bicks = ["ktm","fz5","hornet","livo"];bicks[3]="bmw";
+document.getElementById("mi").innerHTML = bicks;
+var bicks = ["ktm","fz5","hornet","livo"];
+document.getElementById("ram").innerHTML = bicks.length;
+var bicks = ["ktm","fz5","hornet","livo"];
+var last = bicks[bicks.length-1];
+document.getElementById("ww").innerHTML = last;
+var person=[];
+person[0]="jaydip";
+person[1]="valu";
+person[2]="20";
+document.getElementById("pp").innerHTML=
+person[0]+" "+person.length;
+</script>
+<h2>JavaScript Objects</h2>
+<p id="top"></p>
+<script>
+  var person={
+    fristname:"ashish",
+    lastname:"valu",
+     age:"19",
+      gendar:"m"
+    }
+    // problam
+    document.getElementById("top").innerHTML= person.fristname + ' ' + person.age;
+</script>
+<h2>JavaScript Strings</h2>
+<p id="right"></p>
+<script>
+  var  x ="ashish valu"
+  document.getElementById("right").innerHTML=x;
+</script>
+<p id="left"></p>
+<p id="put"></p>
+<p id="cut"></p>
+<p id="city"></p>
+<p id="mycity"></p>
+<p id="my"></p>
+<p id="sun"></p>
+<p id="son"></p>
+<p id="man"></p>
+<p id="karma"></p>
+<p id="non"></p>
+<p id="demo"></p>
+<script>
+  var a = "ABCDEFGHiJKLMNOPQRSTUVWxyz";
+  document.getElementById("left").innerHTML= a.length;
+var str="ktm,fz5,hornet,livo";
+var pos=str.indexOf("hornet");
+document.getElementById("put").innerHTML =pos;
+var str="ktm,fz5,hornet,livo";
+var pos=str.indexOf("ashish")
+document.getElementById("cut").innerHTML =pos;
+var str="ktm,fz5,hornet,livo";
+var pos=str.search("livo");
+document.getElementById("city").innerHTML =pos;
+var str="charvi is playing cricket";
+var pos=str.indexOf("playing",9);
+document.getElementById("mycity").innerHTML =pos;
+var str="charvi is playing cricket";
+var pos=str.indexOf("is",5);
+document.getElementById("my").innerHTML =pos;
+var str="charvi is playing cricket";
+var pos=str.search("cricket");
+document.getElementById("sun").innerHTML =pos;
+var str="charvi is playing cricket";
+var pos=str.slice(10,18);
+document.getElementById("son").innerHTML =pos;
+var str="ktm,fz5,hornet,livo";
+var pos=str.substring(8,14);
+document.getElementById("karma").innerHTML =pos;
+var str="charvi is playing cricket";
+var pos=str.slice(-15,-6);
+document.getElementById("man").innerHTML =pos;
+var str="charvi is playing cricket";
+var pos=str.substr(14,4);
+document.getElementById("non").innerHTML =pos;
+var a="valu";
+var b="ashish";
+var c= a.concat(" ",b);
+document.getElementById("demo").innerHTML=c;
+</script>
+<h2>JavaScript number</h2>
+<p id="java"></p>
+<p id="ja"></p>
+<p id="va"></p>
+<p id="big"></p>
+<p id="long"></p>
+<p id="do"></p>
+
+
+<script>
+  var p=3.99;
+  var q=9;
+  document.getElementById("java").innerHTML=p+ "<br>" +q;
+// ??????????
+  var x=125e8;
+  var y=252e-5;
+  document.getElementById("ja").innerHTML=x+"<br>"+y;
+  var x=2.5+3.6;
+  document.getElementById("va").innerHTML="2.5+3.6 ="+x;
+var x=12;
+var y="35";
+var z=x+y;
+document.getElementById("big").innerHTML =z;
+var x=12;
+var x=50;
+document.getElementById("long").innerHTML="The result is:"+ x + y;
+var x=9.999;
+document.getElementById("do").innerHTML=
+x.toFixed(0)+ "<br>" +
+x.toFixed(2)+ "<br>" +
+x.toFixed(4)+ "<br>" +
+x.toFixed(6);
+</script>
+<h2>JavaScript Comparison </h2>
+<p id="noon"></p>
+<script>
+  var x=6;
+  document.getElementById("noon").innerHTML=(x==8);
+</script>
+<h2>condition </h2>
+<p id="on"></p>
+<script>
+  function myfunction(){
+    var x=5;
+    var name;
+    if (x<2) {
+      name="ashish";
+      }else {
+        name="valu";
+  }
+  document.getElementById("on").innerHTML=name;
+  }
+</script>
+<button onclick="myfunction()">click </button>
+<h2>loops</h2>
+<p id="open"></p>
+<p id="ok"></p>
+<p id="volvo"></p>
+<p id="ll"></p>
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat",];
+var text = "";
+var k;
+for (k = 1; k < cars.length; k++) {
+text += cars[k] + "<br>";
+}
+document.getElementById("open").innerHTML = text;
+var std;
+switch (3){
+  case 0:
+    std="5"
+    break;
+    case 1:
+      std="6"
+      break;
+      case 2:
+        std="7"
+        break;
+        case 3:
+        std="8"
+          break;
+          case 4:
+            std="9"
+            break;
+            case 5:
+              std="10"
+              break;
+}
+document.getElementById("ok").innerHTML=std;
+var x ="";
+var i=0;
+while (i<15) {
+  x+="<br>the number is"+i;
+  i++;
+}
+</script>
+</body>
+</html>
